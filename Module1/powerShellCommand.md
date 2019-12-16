@@ -21,3 +21,15 @@ $ g++ <source name>.cpp
 $ g++ <Source name>.cpp - o <output name>
 $ .\<output name>.exe
 ```
+
+## C++ Template
+```cpp
+// Standared starting template
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    return 0;
+}
+```
