@@ -7,6 +7,10 @@ using namespace std;
     weight(kg) / [Height(m)]^2
 */
 
+const float kMetersToInch = 39.37;
+const float kKiloToLbs = 2.204;
+const int kBMIImperial = 703;
+
 int main(){
     float hight = 0;    // In meters
     float weight = 0;   // In kg
@@ -18,8 +22,10 @@ int main(){
     cin >> weight;
     bmi =  weight / (hight * hight);
     cout << "Your BMI is: " << bmi << ".  You need to get off your ass." << endl;
-    weight *= 2.204;
-    hight *= 39.37; 
-    cout <<"In (imperal) your BMI is: " << (weight * 703)/(hight*hight) << ".  It's a lieeee!!!!" << endl; 
+    weight *= kMetersToInch;
+    hight *= kKiloToLbs; 
+    bmi = (weight * kBMIImperial)/(hight*hight);
+    cout <<"In (imperal) your BMI is: " << bmi << ".  It's a lieeee!!!!" << endl;
+    
     return 0;
 }
