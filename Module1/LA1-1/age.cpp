@@ -30,7 +30,7 @@ int main(){
        case 65 ... 150:
             cout << "You can retire." << endl;
         case 21 ... 64:
-            cout << "You can buy alchol" << endl;
+            cout << "You can buy alchool" << endl;
         case 18 ... 20:
             cout << "You can vote." << endl;
    }

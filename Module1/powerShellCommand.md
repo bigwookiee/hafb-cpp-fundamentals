@@ -1,9 +1,15 @@
+## Something new   
+- cmake    https://cmake.org
+work with projects
+ - g++ 
+
+
 ## C++ enviromet
 ```cpp
 /*
 *   using git
-*   cmake
-*   g++ (mingw)
+*   CMake
+*   g++ (MinGW)
 *
 *   modify path as need.  Use env from the search bar.
 */
@@ -18,13 +24,12 @@
 
 
 ## Plugins
-```cpp
-/*
-*   Add for cpp.
-*   Add spell check. 
-*   Add doxygen documention Generator.
-*/
-```
+- c/c++ Intellisense
+- Code spell extension
+- CMake
+- CMake Tools
+- Add spell check. 
+- Add doxygen documention Generator.   
 
 ## Termal commands.
 Note : ($ means term prompt):
