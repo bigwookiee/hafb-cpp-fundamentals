@@ -17,7 +17,9 @@ int main() {
         cout << "your age is: " << age << ". You ARE VERY Young!!!" << endl;
     }
         
-    
+    cout << "int ar the size of " << sizeof(int) << " bytes" << endl; 
+
+    cout << "minimun int: " << INT32_MIN << " Max is: " << INT32_MAX;
     return 0;
     // All hail clean code!!
  }
