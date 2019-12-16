@@ -1,3 +1,31 @@
+## C++ enviromet
+```cpp
+/*
+*   using git
+*   cmake
+*   g++ (mingw)
+*
+*   modify path as need.  Use env from the search bar.
+*/
+```
+
+## Git Hub for cloud services.
+```cpp
+/*
+*   http::/github.com
+*/
+```
+
+
+## Plugins
+```cpp
+/*
+*   Add for cpp.
+*   Add spell check. 
+*   Add doxygen documention Generator.
+*/
+```
+
 ## Termal commands.
 Note : ($ means term prompt):
 ```bash
@@ -32,4 +60,13 @@ using namespace std;
 int main(){
     return 0;
 }
+```
+
+## Doxygen doc.
+```cpp
+/*
+*   run /**
+*   add stuff to doc.
+*
+*/
 ```
