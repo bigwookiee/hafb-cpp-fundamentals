@@ -17,7 +17,9 @@ int main(){
     cout << "what is your weight? (in Kg) ";
     cin >> weight;
     bmi =  weight / (hight * hight);
-    cout <<"Your BMI is: " << bmi << ".  You need to get off your ass.";
-
+    cout << "Your BMI is: " << bmi << ".  You need to get off your ass." << endl;
+    weight *= 2.204;
+    hight *= 39.37; 
+    cout <<"In (imperal) your BMI is: " << (weight * 703)/(hight*hight) << ".  It's a lieeee!!!!" << endl; 
     return 0;
 }
