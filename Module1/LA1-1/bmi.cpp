@@ -8,13 +8,13 @@ using namespace std;
 */
 
 int main(){
-    float hight = 0;    // In meaters
-    float weight = 0;   // In Kg
-    float bmi = 0;      // kg/m^2
+    float hight = 0;    // In meters
+    float weight = 0;   // In kg
+    float bmi = 0;      // in kg/m^2
     
-    cout << "what is your height? ";
+    cout << "what is your height? (in meters) ";
     cin >> hight;
-    cout << "what is your weight? ";
+    cout << "what is your weight? (in Kg) ";
     cin >> weight;
     bmi =  weight / (hight * hight);
     cout <<"Your BMI is: " << bmi << ".  You need to get off your ass.";
