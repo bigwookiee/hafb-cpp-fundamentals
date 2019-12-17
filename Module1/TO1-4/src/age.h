@@ -1,5 +1,12 @@
-#ifndef AGE_H_
-#define AGE_H_
+/*
+** EPITECH PROJECT, 2019
+** hafb-cpp-fundamentals
+** File description:
+** age
+*/
 
+#pragma once
 
-#endif /* !AGE_H_ */
+void ByValueAgeIn5Years(int age);
+void ByReferenceAgeIn5Years(int& age);
+int CurrentAge(int age);
