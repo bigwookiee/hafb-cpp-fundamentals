@@ -8,3 +8,5 @@
 #pragma once
 
 int sum(int x, int y);
+void updateStep(int step);
+void AddressVersionUpdateStep(int& step);
