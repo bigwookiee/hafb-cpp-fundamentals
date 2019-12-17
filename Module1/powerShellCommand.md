@@ -28,8 +28,10 @@ work with projects
 - Code spell extension
 - CMake
 - CMake Tools
-- Add spell check. 
-- Add doxygen documention Generator.   
+- Add spell check
+- Add doxygen documentation Generator
+- Add epitech c/c++ Headers
+- Add Markdown All in One
 
 ## Termal commands.
 Note : ($ means term prompt):
