@@ -10,3 +10,4 @@
 bool div3(int number);
 bool divX(int number, int divisor);
 void divXRange(int divisor, int range);
+int getDivXRangeCount(int divisor, int range);

@@ -34,5 +34,7 @@ int main()
 
   divXRange(2,kSize);
 
+  cout << "the count of the numbers between 1 ... 30 divisable by 8 is " << getDivXRangeCount(8, kSize);
+
   return 0;
 }

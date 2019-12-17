@@ -54,3 +54,21 @@ void divXRange(int divisor, int range) {
         cout << number << " is divisable by " << divisor << endl;  
     }
 }
+
+/**
+ * @brief Get the Div X Range Count 
+ * 
+ * @param divisor 
+ * @param range 
+ * @return int
+ */
+int getDivXRangeCount(int divisor, int range){
+    int count = 0;
+    for (int number = 1; number <= range; ++number) {
+        if (divX(number,divisor)){
+            ++count;
+        }
+    }
+
+    return count;
+}
