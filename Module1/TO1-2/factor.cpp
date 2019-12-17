@@ -6,11 +6,51 @@
  * @return false 
  */
 #include "factor.h"
+#include <iostream>
 
-bool div3(int num) {
-  if (num%3 == 0) {
+using namespace std;
+
+/**
+ * @brief  checks if a number is divsable by 3.
+ * 
+ * @param number 
+ * @return true 
+ * @return false 
+ */
+
+bool div3(int number) {
+  if (number%3 == 0) {
     return true;
   }
   
     return false;
+}
+
+/**
+ * @brief checks if a number is divisible by a divisor.
+ * 
+ * @param number 
+ * @param divisor 
+ * @return true 
+ * @return false 
+ */
+bool divX(int number, int divisor) {
+    if (number%divisor == 0) {
+        return true;
+    }
+
+    return false;
+}
+
+/**
+ * @brief for a given range check to see if a number is divisible by a divisor.
+ * 
+ * @param divisor 
+ * @param range 
+ */
+void divXRange(int divisor, int range) {
+    for(int number = 1; number <= range; ++number) {
+        if (divX(number, divisor))
+        cout << number << " is divisable by " << divisor << endl;  
+    }
 }

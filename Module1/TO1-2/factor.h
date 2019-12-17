@@ -7,4 +7,6 @@
 
 #pragma once
 
-bool div3(int);
+bool div3(int number);
+bool divX(int number, int divisor);
+void divXRange(int divisor, int range);

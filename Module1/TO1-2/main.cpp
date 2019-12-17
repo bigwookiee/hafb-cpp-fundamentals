@@ -15,6 +15,7 @@
 using namespace std;
 
 const int kSize = 30;
+const int divisor = 5;
 
 int main()
 {
@@ -23,6 +24,15 @@ int main()
       cout << "divs by 3: " << index << endl;
     }
   }
+
+  for (auto index = 1; index <= kSize; ++index){
+      if(divX(index, divisor)){
+          cout << index << " is divisable by " << divisor << endl;  
+      }
+
+  }
+
+  divXRange(2,kSize);
 
   return 0;
 }
