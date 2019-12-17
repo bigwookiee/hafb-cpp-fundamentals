@@ -4,13 +4,15 @@
 #include "cars.h"
 // using namespace std;
 // using namespace lamborghini;
-// using porsche::HorsePower;
+// using porsche::horsePower;
 
 
 int main() 
 {
-    std::cout << "The lamborghini's horse power: " << lamborghini::HorsePower() << std::endl;
-    std::cout << "The porsche's horse power: " << porsche::HorsePower() << std::endl;
-    std::cout << "A regular car's horse power: " << HorsePower() << std::endl;
+    std::cout << "The lamborghini's horse power: " << lamborghini::horsePower() << std::endl;
+    std::cout << "The porsche's horse power: " << porsche::horsePower() << std::endl;
+    // :: Is the namesles space. 
+    std::cout << "A regular car's horse power: " << ::horsePower() << std::endl; 
+    lamborghini::cout();
     return 0;
 }
