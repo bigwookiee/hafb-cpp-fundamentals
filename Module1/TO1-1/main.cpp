@@ -23,7 +23,7 @@ int main()
 {
   
 
-  for (auto index = 0; index < kSize; ++index){
+  for (auto index = 1; index <= kSize; ++index){
     if (div3(index)){
       cout << "divs by 3: " << index << endl;
     }

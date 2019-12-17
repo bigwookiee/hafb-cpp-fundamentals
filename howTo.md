@@ -1,8 +1,5 @@
-## Something new   
-- cmake    https://cmake.org
-work with projects
- - g++ 
-
+# How To C++
+With some windows notes.
 
 ## C++ enviromet
 ```cpp
@@ -22,13 +19,11 @@ work with projects
 */
 ```
 
-
 ## Plugins
 - c/c++ Intellisense
 - Code spell extension
 - CMake
 - CMake Tools
-- Add spell check
 - Add doxygen documentation Generator
 - Add epitech c/c++ Headers
 - Add Markdown All in One
@@ -72,8 +67,18 @@ int main(){
 ## Doxygen doc.
 ```cpp
 /*
-*   run /**
-*   add stuff to doc.
+*   /** <Enter Key>
+*   
+*   Fill out auto-generated stuff to doc.
 *
 */
+```
+
+## CMake
+```bash
+make and move into a build dir.
+refer to 'CMakeLists.txt'
+
+$ cmake .. -G "MinGW Makefiles" #-G option only need in windows.
+$ cmake --build .
 ```
