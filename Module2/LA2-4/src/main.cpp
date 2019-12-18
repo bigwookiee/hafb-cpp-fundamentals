@@ -1,12 +1,31 @@
 #include <iostream>
+#include <array>
 #include "carton.h"
 
-
+const int kMaxSize = 10;
 
 int main() {
   // create a Carton object using the default constructor
   Carton smallBox = Carton();
-  Carton bigBox = Carton(55.8,64.2,120.5);
+  Carton bigBox;
+  std::array<Carton, kMaxSize> boxes;
+  boxes.fill(Carton(12,53,30));
+
+  int index = 0;
+
+  for(auto box : boxes) {
+    std::cout << "Box " << ++index << ": \n";
+    box.displayDimensions(); 
+  }
+
+  try
+  {
+    bigBox = Carton(55.8,64.2,15);
+  }catch(const std::exception& e)
+  {
+    std::cerr << e.what() << '\n';
+  }
+  
   // create a Carton object using the other constructor
 
   smallBox.setWidth(11.3);
@@ -14,7 +33,9 @@ int main() {
   smallBox.setHeight(10.0);
   
   smallBox.displayDimensions();
-  bigBox.displayDimensions();
+  smallBox.displayVolume();
+  bigBox.displayDimensionsWithVolume();
+
 
   // create an array of Cartons
 

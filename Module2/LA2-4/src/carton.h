@@ -18,17 +18,29 @@ class Carton{
         
 
     public:
-        double width();
-        double length();
-        double height();
+        static const double KMaxSize;
+        static const double KMinWidth;
+        static const double KMinLength;
+        static const double KMinHeight;
+
+        double width() const;
+        double length() const;
+        double height() const;
+        
 
     void setWidth(double width);
     void setLength(double length);
     void setHeight(double height);
+    void setDimensions(double width, double length,double height);
+
+    double volume() const;
 
     void displayDimensions();
+    void displayVolume();
+    void displayDimensionsWithVolume();
 
         Carton();
         Carton(double width, double length, double height);
+        ~Carton();
 
 };
