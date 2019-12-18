@@ -9,6 +9,7 @@
 */
 
 #pragma once
+#include <ostream>
 
 class Carton{
     private: 
@@ -35,9 +36,11 @@ class Carton{
 
     double volume() const;
 
-    void displayDimensions();
-    void displayVolume();
-    void displayDimensionsWithVolume();
+    void displayDimensions(int boxId);
+    void displayVolume(int boxId);
+    void displayDimensionsWithVolume(int boxId);
+
+    void wrightData(std::ostream &out) const;
 
         Carton();
         Carton(double width, double length, double height);

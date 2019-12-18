@@ -1,6 +1,7 @@
  #include "carton.h"
  #include <iostream>
  #include <exception>
+ #include <iostream>
  
 const double Carton::KMaxSize = 100;
 const double Carton::KMinWidth = 6;
@@ -77,21 +78,25 @@ void Carton::setHeight(double height){
     height_ = height;
 }
 
-void Carton::displayDimensions() {
-  std::cout << "Box's width:  " << width() << std::endl;
-  std::cout << "Box's length: " << length() << std::endl;
-  std::cout << "Box's height: " << height() << std::endl;
+void Carton::displayDimensions(int boxId) {
+  std::cout << "Box "<< boxId << " width:  " << width() << std::endl;
+  std::cout << "Box "<< boxId << " length: " << length() << std::endl;
+  std::cout << "Box "<< boxId << " height: " << height() << std::endl;
 }
 
 double Carton::volume() const{
     return width() * length() * height();
 }
 
-void Carton::displayVolume(){
-    std::cout << "Box's volume: " << volume() << std::endl;
+void Carton::wrightData(std::ostream &out) const{
+    out << width() << "," << length() << "," <<  height() << "," << volume() << std::endl;
 }
 
-void Carton::displayDimensionsWithVolume(){
-    displayDimensions();
-    displayVolume();
+void Carton::displayVolume(int boxId){
+    std::cout << "Box " << boxId << "volume: " << volume() << std::endl;
+}
+
+void Carton::displayDimensionsWithVolume(int boxId){
+    displayDimensions(boxId);
+    displayVolume(boxId);
 }
