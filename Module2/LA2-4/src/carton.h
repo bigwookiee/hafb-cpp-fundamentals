@@ -22,6 +22,12 @@ class Carton{
         double length();
         double height();
 
+    void setWidth(double width);
+    void setLength(double length);
+    void setHeight(double height);
+
+    void displayDimensions();
+
         Carton();
         Carton(double width, double length, double height);
 

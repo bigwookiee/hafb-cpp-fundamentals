@@ -6,10 +6,15 @@
 int main() {
   // create a Carton object using the default constructor
   Carton smallBox = Carton();
+  Carton bigBox = Carton(55.8,64.2,120.5);
   // create a Carton object using the other constructor
-  std::cout << "Box height: " << smallBox.height() << std::endl;
-  std::cout << "Box width:  " << smallBox.width() << std::endl;
-  std::cout << "Box length: " << smallBox.length() << std::endl;
+
+  smallBox.setWidth(11.3);
+  smallBox.setLength(12.3);
+  smallBox.setHeight(10.0);
+  
+  smallBox.displayDimensions();
+  bigBox.displayDimensions();
 
   // create an array of Cartons
 
