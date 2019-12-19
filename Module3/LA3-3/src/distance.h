@@ -25,6 +25,9 @@ class Distance{
         float inches() const {return inches_;}
         void setInches(int inches) {inches_ = inches;}
 
+        Distance operator +(Distance &rhs) const;
+        friend std::ostream& operator <<(std::ostream& os, const Distance);
+
         void ShowDist() const;
 };
 

@@ -2,6 +2,38 @@
 // increment counter variable with ++ operator
 // uses unnamed temporary object
 #include <iostream>
-#include <cmath> 
-using namespace std;
 #include "distance.h"
+
+void Distance::ShowDist() const{
+    std::cout << feet() << "\'" << inches() << "\"" << std::endl;
+}
+
+Distance Distance::operator +(Distance &rhs) const{
+    float inchesTmp = inches_ + rhs.inches();
+    int feetTmp =static_cast<int>(inchesTmp / 12);
+    inchesTmp -= 12 * feetTmp;
+
+    while(inchesTmp < 0){
+        inchesTmp *= -1;
+    }
+
+    return Distance (feet_ + rhs.feet() + feetTmp, inchesTmp);
+}
+
+Distance Distance::operator -(Distance &rhs) const{
+    float inchesTmp = inches_ - rhs.inches();
+    int feetTmp = static_cast<int>(inchesTmp / 12); 
+    inchesTmp += 12 * feetTmp;
+
+    while(inchesTmp < 0){
+        inchesTmp *= -1;
+    }
+
+    return Distance (feet_ - rhs.feet() - feetTmp, inchesTmp);
+}
+
+std::ostream& operator <<(std::ostream& os, const Distance distance){
+  os << distance.feet() << " feet " << distance.inches() << " inches";
+  
+  return os;
+}

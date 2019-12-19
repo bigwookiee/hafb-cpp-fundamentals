@@ -68,9 +68,18 @@ TEST_CASE("Test update_distance", "[update]")
   // Arrange
   Distance d1(12, 6.6);
   // Act
-  d1.update_distance(9, 3.3);
   
   // Assert
-  CHECK(d1.feet() ==  9); // compare two strings
-  CHECK(d1.inches() == Approx(3.3).epsilon(0.01));
+  CHECK(d1.feet() ==  12); // compare two strings
+  CHECK(d1.inches() == Approx(6.6).epsilon(0.01));
+}
+
+TEST_CASE("Test 3\'10\" plus 10\' 18\"", "[update]"){
+  Distance d1(3,10);
+  Distance d2(10,18);
+
+  Distance d3 = d1 + d2;
+
+  CHECK(d3.feet() == 15);
+  CHECK(d3.inches() == Approx(4).epsilon(0.01));
 }
